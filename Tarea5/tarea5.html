@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Ejemplo de HTML5">
+  <meta name="keywords" content="HTML5, CSS3, JavaScript">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <link rel="shortcut icon" href="./imagenes/Logo.png">
+  <title>Conversor de numeros</title>
+  <link rel="stylesheet" href="./css/tarea5.css">
+</head>
+
+<body>
+  <div id="contenedor">
+    <header id="cabecera">
+
+      
+        <picture style="margin: 5px;">
+          <source media="(min-width: 500px)" srcset="imagenes/LogoPlantilla.png">
+          <img id="imagenTitulo" src="imagenes/Logop.png" alt="Logo CIFP">
+        </picture>
+        <h1 id="titulo">Conversor de Numeros </h1>
+
+      
+    </header>
+    <nav id="menu">
+      <input type="checkbox" id="menuopciones">
+      <label for="menuopciones"> ☰ </label>    
+      <ul>
+        <li>Principal</li>
+        <li>Fotos</li>
+        <li>Videos</li>
+        <li>Contacto</li>
+      </ul>
+
+    </nav>
+    <section id="seccion">
+      <article>
+        <header>
+          <hgroup>
+            <h1>Conversor</h1>
+          </hgroup>
+        </header>
+        Numero: <input type="text" id="num" />
+        <br></br>
+        Seleccione de que tipo es el dato introducido:
+        <select name="tipoRecib">
+            <option value="1">Binario</option>
+            <option value="2">Octal</option>
+            <option value="3">Decimal</option>
+            <option value="4">Hexadecimal</option>
+        </select>
+        <br></br>
+        Seleccione a que tipo quiere convertir:
+        <br></br>
+        <select name="tipoConver">
+            <option value="1">Binario</option>
+            <option value="2">Octal</option>
+            <option value="3">Decimal</option>
+            <option value="4">Hexadecimal</option>
+        </select>
+      </article>
+      <article>
+        <header>
+          <hgroup>
+            <h1>Resultado</h1>
+          </hgroup>
+        </header>
+        Resultado: <input type="text" id="resultado" />
+      </article>
+    </section>
+    <aside id="columna">
+      <blockquote>Formatos admitidos:</blockquote>
+      <blockquote> - Binario</blockquote>
+      <blockquote> - Octal</blockquote>
+      <blockquote> - Decimal</blockquote>
+      <blockquote> - Hexadecimal</blockquote>
+    </aside>
+    <footer id="pie">
+      Desarrollo de Aplicaciones Web(DAW) © CIFP Santa Catalina
+    </footer>
+  </div>
+</body>
+
+</html>
