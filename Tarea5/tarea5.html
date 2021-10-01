@@ -40,33 +40,30 @@
       <article>
         <header>
           <hgroup>
-            <h1>Conversor</h1>
+            <h1></h1>
           </hgroup>
         </header>
         Numero: <input type="text" id="num" />
         <br></br>
-        Seleccione de que tipo es el dato introducido:
-        <select name="tipoRecib">
-            <option value="1">Binario</option>
-            <option value="2">Octal</option>
-            <option value="3">Decimal</option>
-            <option value="4">Hexadecimal</option>
-        </select>
         <br></br>
         Seleccione a que tipo quiere convertir:
         <br></br>
-        <select name="tipoConver">
-            <option value="1">Binario</option>
-            <option value="2">Octal</option>
-            <option value="3">Decimal</option>
-            <option value="4">Hexadecimal</option>
+        <select id="tipoConver" onchange="convertir()">
+          <option selected value="0"> Elige una opción </option>
+          <optgroup label="De DECIMAL a">
+              <option value="1">Binario</option>
+              <option value="2">Octal</option>
+              <option value="3">Hexadecimal</option>
+          </optgroup>
+          <optgroup label="De tipo a DECIMAL">
+              <option value="4">Binario</option>
+              <option value="5">Octal</option>
+              <option value="6">Hexadecimal</option>
+          </optgroup>
         </select>
       </article>
       <article>
         <header>
-          <hgroup>
-            <h1>Resultado</h1>
-          </hgroup>
         </header>
         Resultado: <input type="text" id="resultado" />
       </article>
@@ -82,6 +79,7 @@
       Desarrollo de Aplicaciones Web(DAW) © CIFP Santa Catalina
     </footer>
   </div>
+  <script src="tarea5.js"></script>
 </body>
 
 </html>
