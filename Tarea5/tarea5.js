@@ -8,6 +8,7 @@ function convertir(){
             resultado=number.toString(2);
             break;
         }
+         
         case 2:{
             resultado=number.toString(8);
             break;
