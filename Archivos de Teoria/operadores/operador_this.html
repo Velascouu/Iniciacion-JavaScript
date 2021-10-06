@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Operador this </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <script>
+        function nuevo()
+          { alert("ID: "+this.id+"  Value : "+this.value);  }
+         function mensaje(aa)            {
+                   alert("ID: "+aa.id+"  Value : "+aa.value);
+                   var bnuevo=document.createElement("input");
+                   bnuevo.id="bn";
+                   bnuevo.type="button";
+                   bnuevo.value="Botón Nuevo";
+		  //Programa un evento para el nuevo elemento utilizando una fucntion anónima
+                 //bnuevo.onclick = function() {   alert("blabla");    };
+		//Programa un evento para el nuevo elemento utilizando una fucntion ya creada.
+		//El código de la función ha de estar delante en el código(lenguaje interpretado).
+                    bnuevo.onclick =nuevo;
+                   document.getElementById("cajon").appendChild(bnuevo);bnuevo.onclik=nuevo;            }
+     </script>
+    <body>
+        <input id ="boton" type="button" value ="Botón 1"    onclick="mensaje(this)"/>
+ 	    <input id ="boton2" type="button" value ="Botón 2"    onclick="mensaje(this)"/>
+        <div id="cajon">Operador this </div>
+
+
+    </body>
+</html>

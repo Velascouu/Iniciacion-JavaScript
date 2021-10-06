@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+</head>
+<body>
+ <script>
+     var ContenidoMensaje="Miercoles 25 de Agosto de 2021"
+     var masDatos="Mensaje bonito"
+     Swal.fire({
+   title: 'Mensaje Bonito',
+    input: 'textarea',
+    text: ContenidoMensaje,
+    inputValue:masDatos,
+ 
+    imageUrl: 'panoramica.jpg',
+    imageWidth: 200,
+    imageHeight: 200,
+    imageAlt: 'Mensaje bonito',
+  }).then(function(result) {
+
+   
+    alert(result.value)
+   alert(masDatos)
+  })
+
+ </script>   
+</body>
+</html>

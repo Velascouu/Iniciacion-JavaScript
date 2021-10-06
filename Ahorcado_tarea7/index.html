@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Ejemplo de HTML5">
+  <meta name="keywords" content="HTML5, CSS3, JavaScript">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <link rel="shortcut icon" href="./imagenes/Logo.png">
+  <title>Plantilla</title>
+  <link rel="stylesheet" href="./css/plantilla.css">
+</head>
+
+<body>
+  <div id="contenedor">
+    <header id="cabecera">
+        <h1 id="titulo">Juego del ahorcado</h1>
+    </header>
+    
+    <section id="seccion">
+      <article>
+            <h2>Introduce una palabra:</h2>
+        <input id="palabra" type="password" placeholder="Dame una palabra"/>
+            <br>
+            <br>
+            <h2>Letra:</h2>
+        <input id="caracter" type="text" placeholder="Dame una letra" maxlength="1"> 
+            <br>
+            <br>
+            <h2>Aciertos</h2>
+        <input id="Aciertos" type="text"/>
+            <br>
+            <br>
+            <h2>Historial</h2>
+        <div id="fallos"></div>
+            <br>
+        
+      </article>
+    </section>
+  </div>
+
+  <script src="ahorcado.js"></script>
+</body>
+
+</html>
